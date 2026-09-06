@@ -1,0 +1,73 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 4.6rem;
+}
+
+.header {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center; /* выравнивание элементов по центру flexbox*/
+    padding: 0.6rem 1.25rem 0rem 0.6rem;
+    box-sizing: border-box;
+    border-bottom: 2px solid white;
+    background-color: black;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+    display: block;
+}
+
+.name h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.pages {
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+}
+
+.pages a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+.pages a:hover {
+    color: rgb(245, 34, 34);
+}
+
+/* Адаптивность */
+
+@media (max-width: 768px) { /* планшет */
+    html {font-size: 14px;}
+}
+
+@media (max-width: 480px) { /* телефон */
+    html {font-size: 12px;}
+}
+
+@media (max-width: 360px) { /* маленький телефон */
+    html {font-size: 10px;}
+}

@@ -1,0 +1,21 @@
+# Папка с зависимостями 
+node_modules/
+
+# Папки сборки (то, что генерируется автоматически)
+dist/
+build/
+out/
+.vite/
+
+# Файлы окружения с секретами
+.env
+.env.local
+.env.production
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
+npm-debug.log*
