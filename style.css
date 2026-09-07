@@ -209,6 +209,7 @@ section.about {
         text-align: center;
         padding: 1rem 3rem 0rem 3rem;
     }
+
     .main_img {
         height: 18rem;
         width: 100%;
@@ -219,6 +220,12 @@ section.about {
 @media (max-width: 480px) { /* телефон */
     html {font-size: 12px;}
     /* Секция "О нас" */
+    section.about {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 3rem 0rem 3rem;
+    }
+    
     .main_text p {
         font-size: 1.5rem;
         padding: 0rem 1rem;
