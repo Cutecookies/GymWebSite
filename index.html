@@ -30,7 +30,32 @@
             <img src="images/about_picture.jpg" class="main_img">
         </section>
 
-        
+        <section class="gym_photos">
+            <h2>Фотографии спортивного зала</h2>
+            <div class="slider_container">
+                <!-- скрытые радиокнопки -->
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+
+                <div class="slider">
+                    <!-- фотографии спортзала -->
+                    <div class="slides">
+                        <div class="slide"><img src="images/gym1.png" alt="Фото спортзала 1"></div>
+                        <div class="slide"><img src="images/gym2.png" alt="Фото спортзала 2"></div>
+                        <div class="slide"><img src="images/gym3.png" alt="Фото спортзала 3"></div>
+                    </div>
+
+                    <!-- точки переключения -->
+                    <div class="dots">
+                        <label for="slide1" class="dot"></label>
+                        <label for="slide2" class="dot"></label>
+                        <label for="slide3" class="dot"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>
