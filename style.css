@@ -101,7 +101,7 @@ section.about {
 
 /* Секция фотографий */
 .gym_photos {
-    padding: 7rem;
+    padding-top: 7rem;
 }
 
 .gym_photos h2 {
@@ -199,11 +199,54 @@ section.about {
 @media (max-width: 768px) { /* планшет */
     html {font-size: 14px;}
     body {padding-top: 6rem;}
-    .pages {justify-content: space-evenly;}
+    .pages {
+        justify-content: space-evenly;
+    }
+
+    /* Секция "О нас"*/
+    section.about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main_img {
+        height: 15rem;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 480px) { /* телефон */
     html {font-size: 12px;}
+    /* Секция "О нас" */
+    .main_text p {
+        font-size: 1.5rem;
+        padding: 0rem 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    .gym_photos {
+        padding-top: 2rem;
+    }
+
+    .slider_container input[type="radio"] {
+        display: none;
+    }
+
+    .dots {
+        padding: 0.5rem 0rem;
+    }
+
+    .dot {
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .slide img {
+        height: 15rem;
+    }
 }
 
 @media (max-width: 360px) { /* маленький телефон */
