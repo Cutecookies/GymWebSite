@@ -205,6 +205,8 @@ section.about {
 
     /* Секция "О нас"*/
     section.about {
+        flex-direction: column;
+        text-align: center;
         padding: 1rem 3rem 0rem 3rem;
     }
     .main_img {
