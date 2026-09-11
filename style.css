@@ -280,7 +280,7 @@ section.about {
 
 .schedule {
     width: 100%;
-    background-color: rgb(34, 34, 34);
+    padding-bottom: 2rem;
 }
 
 .table_wrapper {
@@ -322,6 +322,76 @@ section.about {
 
 .schedule_table tbody tr:hover {
     background-color: rgba(245, 34, 34, 0.15);
+}
+
+/* Секции абонементов */
+.individual_membership {
+    padding: 5rem;
+    background-color: rgb(34, 34, 34);
+    padding-top: 1rem;
+    color: black;
+}
+
+.individual_membership h2 {
+    text-align: center;
+    color: white;
+}
+
+.membership_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.membership_card {
+    color: black;
+    background-color: rgb(198, 198, 198);
+    border: 7px solid rgb(34, 34, 34);
+    padding: 0rem 1rem 1rem 1rem;
+    font-family: Bebas Neue;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+
+.membership_name {
+    text-align: center;
+    font-family: 'Roboto', serif;;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-bottom: 5px solid rgb(34, 34, 34);
+}
+
+.membership_cost {
+    text-align: center;
+}
+
+.btn_membership {
+    display: block;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.btn_membership:hover {
+    background-color: rgb(245, 34, 34);
+    color: white;
+}
+
+.training_membership {
+    padding: 5rem;
+    background-color: black;
+    padding-top: 1rem;
+    color: white;
+}
+
+.training_membership h3 {
+    font-family: 'Roboto', serif;;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.7rem;
+    padding-top: 2rem;
 }
 
 /* Адаптивность */
