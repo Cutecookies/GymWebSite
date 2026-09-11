@@ -134,6 +134,7 @@ section.about {
     height: 30rem;
     object-fit: cover;
     display: block;
+    border-radius: 0.5rem;
 }
 
 .slider_container input[type="radio"] {
@@ -221,6 +222,7 @@ section.about {
     padding: 0rem 1rem;
     font-family: Bebas Neue;
     font-size: 1.2rem;
+    border-radius: 1rem;
 }
 
 .trainer_card img {
@@ -269,6 +271,57 @@ section.about {
     padding: 2rem 0 0.5rem 0;
     text-align: center;
     font-size: 0.9rem;
+}
+
+/* Секция расписания */
+.schedule h2 {
+    text-align: center;
+}
+
+.schedule {
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+}
+
+.table_wrapper {
+    width: 100%;
+    color: white;
+    padding: 1rem 2rem;
+    overflow-x: auto;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.schedule_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule_table th,
+.schedule_table td {
+    padding: 0.8rem 0.5rem;
+    text-align: center;
+    border: 2px solid rgba(115, 115, 115, 0.43);
+    font-size: 0.9rem;
+    word-wrap: break-word;  /* Перенос длинных слов */
+    vertical-align: middle;
+}
+
+.schedule_table thead th {
+    background-color: rgb(245, 34, 34);
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
+
+.schedule_table .time {
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    color: rgb(245, 34, 34);
+    white-space: nowrap;  /* ← Чтобы время не переносилось */
+}
+
+.schedule_table tbody tr:hover {
+    background-color: rgba(245, 34, 34, 0.15);
 }
 
 /* Адаптивность */
@@ -331,8 +384,8 @@ section.about {
     }
 
     .footer_content {
-    gap: 6rem;
-}
+        gap: 6rem;
+    }
 }
 
 @media (max-width: 360px) { /* маленький телефон */
