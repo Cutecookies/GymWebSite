@@ -241,6 +241,36 @@ section.about {
     text-align: center;
 }
 
+/* Подвал */
+
+.footer {
+    background-color: rgb(34, 34, 34);
+    padding-top: 1rem;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0 2rem;
+    gap: 8rem;
+}
+
+.footer_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_col p {
+    margin: 0;
+}
+
+.footer_bottom {
+    padding: 2rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 /* Адаптивность */
 
 @media (max-width: 768px) { /* планшет */
@@ -283,6 +313,7 @@ section.about {
 
     .gym_photos {
         padding-top: 2rem;
+        padding-bottom: 5rem;
     }
 
     .slider_container input[type="radio"] {
