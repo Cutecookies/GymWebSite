@@ -313,7 +313,7 @@ section.about {
 
     .gym_photos {
         padding-top: 2rem;
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
     }
 
     .slider_container input[type="radio"] {
@@ -329,6 +329,10 @@ section.about {
     .slide img {
         height: 15rem;
     }
+
+    .footer_content {
+    gap: 6rem;
+}
 }
 
 @media (max-width: 360px) { /* маленький телефон */
