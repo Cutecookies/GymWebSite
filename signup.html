@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Регистрация — TITAN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz One:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="name">
+            <img class="logo" src="images/logo.png" alt="Логотип TITAN">
+            <h1>TITAN</h1>
+        </div>
+        <div class="pages">
+            <a href="index.html">Главная</a>
+            <a href="aboniments.html">Абонименты</a>
+            <a href="login.html" class="active">Личный кабинет</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="authification">
+            <div class="auth_card">
+                <h2>Создать аккаунт</h2>
+                <p class="auth_subtitle">Начни свой путь к силе прямо сейчас</p>
+
+                <form class="auth_form" action="#" method="POST">
+                    <div class="form_group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Александр" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="example@mail.ru" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" placeholder="+7 (999) 123-45-67">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" placeholder="Минимум 6 символов" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="confirm">Подтвердите пароль</label>
+                        <input type="password" id="confirm" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="form_options">
+                        <label class="checkbox_label">
+                            <input type="checkbox" required> Я согласен с <a href="#">условиями</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth_btn">Зарегистрироваться</button>
+                </form>
+
+                <p class="auth_switch">
+                    Уже есть аккаунт? <a href="login.html">Войдите</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_bottom">
+            <p>&copy; 2026 TITAN. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

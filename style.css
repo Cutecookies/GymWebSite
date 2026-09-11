@@ -13,6 +13,8 @@ body {
     background-repeat: no-repeat;
 }
 
+.pages a.active { color: rgb(245, 34, 34); }
+
 .main_text p {
    font-family: Fugaz One, Bebas Neue; 
    font-size: 2rem;
@@ -394,6 +396,121 @@ section.about {
     padding-top: 2rem;
 }
 
+/* Секции аунтификации */
+.authification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.auth_card {
+    background-color: rgb(34, 34, 34);
+    border: 2px solid rgb(115, 115, 115);
+    border-radius: 1.5rem;
+    padding: 2rem 3rem;
+    max-width: 18rem;
+}
+
+.auth_card h2 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 2px;
+}
+
+.auth_subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.auth_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form_group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form_group input {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(115, 115, 115, 0.3);
+    color: white;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form_group input:focus {
+    outline: none;
+    border-color: rgb(245, 34, 34);
+    background-color: rgba(245, 34, 34, 0.05);
+}
+
+.form_group input::placeholder {
+    color: rgb(115, 115, 115);
+}
+
+.form_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.checkbox_label input {
+    accent-color: rgb(245, 34, 34);
+    cursor: pointer;
+}
+
+.authification a {
+    color: rgb(245, 34, 34);
+    text-decoration: none;
+}
+
+.authification a:hover {
+    text-decoration: underline;
+}
+
+.auth_btn {
+    display: block;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.auth_btn:hover {
+    background-color: rgb(245, 34, 34);
+    color: white;
+}
+
+.auth_switch {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #888;
+    font-size: 0.95rem;
+}
+
 /* Адаптивность */
 
 @media (max-width: 768px) { /* планшет */
@@ -455,6 +572,15 @@ section.about {
 
     .footer_content {
         gap: 6rem;
+    }
+
+    .membership_cards {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 13rem));
+    }
+
+    .form_options {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
